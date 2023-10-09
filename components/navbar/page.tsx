@@ -5,10 +5,10 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 
 const navigation = [
-  { name: 'MI CV', href: '#', current: true },
-  { name: 'Github', href: '#', current: false },
-  { name: 'Proyectos', href: '#', current: false },
-  { name: 'Contacto', href: '#', current: false },
+  { name: 'MI CV', href: 'https://www.canva.com/design/DAFbUShlDHI/MWFY9DlRXx0ifA0xnMXLOQ/view?utm_content=DAFbUShlDHI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink#1', current: true },
+  { name: 'Github', href: 'https://github.com/Ivanakowalczuk', current: false },
+  { name: 'Linkedin', href: 'https://www.linkedin.com/in/frontend-javascript-react-ivana-kowalczuk/', current: false },
+  { name: 'Contacto', href: '', current: false },
 ]
 
 function classNames(...classes:any) {
@@ -17,7 +17,7 @@ function classNames(...classes:any) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className=" bg-gray-800">
+    <Disclosure as="nav" className=" bg-gray-800 p-2">
       {({ open }) => (
         <>
           <div >

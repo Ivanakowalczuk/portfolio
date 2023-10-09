@@ -1,17 +1,20 @@
 'use client'
+import Link from 'next/link'
+import { NextResponse } from 'next/server'
 import React from 'react'
 
-const Card = () => {
+const Card = ({data}:any) => {
   return (
-<div className="max-w-md mx-auto border rounded-xl shadow-md overflow-hidden md:max-w-2xl mt-20">
+<div className="max-w-md mx-auto border rounded-xl shadow-md overflow-hidden md:max-w-3xl mt-20">
   <div className="md:flex">
     <div className="md:shrink-0">
-      <img className="h-48 w-full object-cover md:h-full md:w-48" src="https://raw.githubusercontent.com/Ivanakowalczuk/proyectoManage/main/img/Logo.png" alt="Modern building architecture"/>
+      <img className="h-48 w-full object-cover md:h-full md:w-48" src={data.imagen}/>
     </div>
     <div className="p-8">
-      <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Company retreats</div>
-      <a href="#" className="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Incredible accommodation for your team</a>
-      <p className="mt-2 text-slate-500">Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of places to do just that.</p>
+      <div className="uppercase tracking-wide text-lg text-white-500 font-semibold">{data.nombre}</div>
+      <Link href={data.url} className="block mt-1 text-lg leading-tight font-medium text-blue-600 hover:underline">Ver demo</Link>
+      <p className="mt-4 mb-4 text-white">{data.descripción}</p>
+      <Link href={data.url} className="block mt-1 text-sm leading-tight font-medium text-blue-400 hover:underline">Ver repositorio</Link>
     </div>
   </div>
 </div>
