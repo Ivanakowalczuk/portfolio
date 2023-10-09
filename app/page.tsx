@@ -1,6 +1,4 @@
-import Card from '@/components/card/page'
-import GrillaProyectos from '@/components/grillaProyectos/page'
-import Navbar from '@/components/navbar/page'
+import GrillaProyectos from "@/components/grillaProyectos/page";
 
 
 export default function Home() {

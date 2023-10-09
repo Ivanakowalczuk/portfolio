@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "lib/dbConnect.ts", "components/grillaProyectos/page.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "lib/dbConnect.ts", "components/grillaProyectos/page.tsx"],
   "exclude": ["node_modules"]
 }

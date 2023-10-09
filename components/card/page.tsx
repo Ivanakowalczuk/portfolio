@@ -1,6 +1,5 @@
 'use client'
 import Link from 'next/link'
-import { NextResponse } from 'next/server'
 import React from 'react'
 
 const Card = ({data}:any) => {

@@ -13,10 +13,10 @@ const getData = async () => {
 
   const GrillaProyectos = async () => {
     const {data} = await getData()
-  console.log(data)
+  
     return(
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 p-2">
-        {data.map((elem)=>(
+        {data.map((elem: any)=>(
           <>
          
           <Card data={elem}/>
