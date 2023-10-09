@@ -7,7 +7,7 @@ const Card = ({data}:any) => {
 <div className="max-w-md mx-auto border rounded-xl shadow-md overflow-hidden md:max-w-3xl mt-20">
   <div className="md:flex">
     <div className="md:shrink-0">
-      <img className="h-48 w-full object-cover md:h-full md:w-48" src={data.imagen}/>
+      <img className="h-48 w-full object-cover md:h-full md:w-48" src={data.imagen} alt='foto proyecto'/>
     </div>
     <div className="p-8">
       <div className="uppercase tracking-wide text-lg text-white-500 font-semibold">{data.nombre}</div>
