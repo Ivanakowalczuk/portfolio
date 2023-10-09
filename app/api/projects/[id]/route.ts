@@ -1,8 +1,8 @@
 import dbConnect  from "@/lib/dbConnect";
 import { ProjectModel } from "@/models/Proyecto";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
-export const GET = async(request: any, {params}:any) =>{
+export const GET = async(req: NextRequest, {params}: any) =>{
     await dbConnect()
     const id: Number = params.id
     try{
@@ -13,7 +13,7 @@ export const GET = async(request: any, {params}:any) =>{
     }
 }
 
-export const DELETE = async(request: any, {params}:any) =>{
+export const DELETE = async(req: NextRequest, {params}:any) =>{
     await dbConnect()
     const id: Number = params.id
     try{
@@ -27,10 +27,10 @@ export const DELETE = async(request: any, {params}:any) =>{
     }
 }
 
-export const PUT = async(request: any, {params}:any) =>{
+export const PUT = async(req: NextRequest, {params}:any) =>{
     await dbConnect()
     const id: Number = params.id
-    const body = await request.json()
+    const body = await req.json()
     try{
       const result = await ProjectModel.findByIdAndUpdate(id, {$set:{...body}}, {new:true})
       if(!result){

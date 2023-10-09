@@ -2,7 +2,7 @@ import { NextResponse, NextRequest }  from "next/server"
 import { ProjectModel } from "@/models/Proyecto"
 import dbConnect from "@/lib/dbConnect"
 
-export const POST =async (req:any, res:any) => {
+export const POST =async (req:NextRequest, res:NextResponse) => {
     await dbConnect()
     try{
       const body = await req.json()
