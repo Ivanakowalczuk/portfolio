@@ -4,7 +4,7 @@ import Card from "../card/page";
 
 
 const getData = async () => {
-  const url = process.env.URI + "/api/projects";
+  const url = process.env.URI + "/api/projects" || process.env.NODE_ENV;
   console.log(process.env.URI)
     try {
       const response = await fetch(url, { cache: "no-store" });
