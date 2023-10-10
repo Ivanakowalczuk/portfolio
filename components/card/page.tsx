@@ -14,7 +14,7 @@ const Card = ({data}:any) => {
       <div className="uppercase tracking-wide text-lg text-white-500 font-semibold">{data.nombre}</div>
       <Link href={data.url} className="block mt-1 text-lg leading-tight font-medium text-blue-600 hover:underline">Ver demo</Link>
       <p className="mt-4 mb-4 text-white">{data.descripción}</p>
-      <Link href={data.url} className="block mt-1 text-sm leading-tight font-medium text-blue-400 hover:underline">Ver repositorio</Link>
+      <Link href={data.repositorio} className="block mt-1 text-sm leading-tight font-medium text-blue-400 hover:underline">Ver repositorio</Link>
     </div>
   </div>
 </div>
