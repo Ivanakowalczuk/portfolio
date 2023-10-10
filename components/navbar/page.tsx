@@ -3,6 +3,7 @@ import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const navigation = [
   { name: 'MI CV', href: 'https://www.canva.com/design/DAFbUShlDHI/MWFY9DlRXx0ifA0xnMXLOQ/view?utm_content=DAFbUShlDHI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink#1', current: true },
@@ -70,9 +71,11 @@ export default function Navbar() {
                     <Menu.Button className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                       <span className="absolute -inset-1.5" />
                       <span className="sr-only">Open user menu</span>
-                      <img
+                      <Image
                         className="h-12 w-12 rounded-full"
                         src='/fotoPerfil.png'
+                        width={100}
+                        height={100}
                         alt="foto de perfil"
                       />
                     </Menu.Button>
@@ -90,7 +93,7 @@ export default function Navbar() {
                       <Menu.Item>
                         {({ active }) => (
                             
-                          <img src='/fotoPerfil.png'/>
+                          <Image alt='Foto Perfil' width={200} height={200} src='/fotoPerfil.png'/>
 
                       
                         )}
