@@ -1,8 +1,7 @@
-{
-    "functions": {
-        "api/**/*.ts": {
-        "memory": 3008,
-        "maxDuration": 30
-      }
+{   "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/app/api/$1"
     }
+  ]
   }
