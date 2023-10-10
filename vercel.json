@@ -3,5 +3,11 @@
       "source": "/app/api/(.*)",
       "destination": "/app/api/$1"
     }
-  ]
+    
+  ],
+
+  "crons": [{
+    "path": "/api/cron",
+    "schedule": "0 10 * * *"
+  }]
   }
