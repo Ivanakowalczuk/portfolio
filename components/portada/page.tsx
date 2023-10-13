@@ -9,10 +9,10 @@ const Portada = () => {
 
   <section className="background-radial-gradient mb-20 text-center">
     
-    <div className="px-6 py-12 text-center md:px-12 lg:text-left">
+    <div className="px-6 py-10 text-center md:px-12 lg:text-left">
       <div className="container mx-auto">
         <div className="grid items-center gap-8 lg:grid-cols-2">
-          <div className="mt-2 ">
+          <div className="mt-0 p-0 mb-60">
             <h1 className="mb-6 text-5xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-red-600 md:text-6xl xl:text-8xl
             animate-jump-out animate-once animate-ease-in-out animate-alternate-reverse  animate-duration-[2000ms]">
              Ivana Kowalczuk<br /><span className="text-white xl:text-3x2">Developer</span>
@@ -29,7 +29,7 @@ const Portada = () => {
           <div className="mb-10 ">
             <div className="flex justify-between  w-full overflow-hidden "
              >
-                <img  src="/fotoPerfil2.png" alt='foto' className="relative h-75 w-75   animate-jump-out animate-once animate-ease-in-out animate-alternate-reverse  animate-duration-[2000ms]">
+                <img  src="/fotoPerfil2.png" alt='foto' className="relative h-100 animate-jump-out animate-once animate-ease-in-out animate-alternate-reverse  animate-duration-[2000ms]">
                 </img>
             
             </div>

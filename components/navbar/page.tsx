@@ -9,7 +9,7 @@ const navigation = [
   { name: 'MI CV', href: 'https://www.canva.com/design/DAFbUShlDHI/MWFY9DlRXx0ifA0xnMXLOQ/view?utm_content=DAFbUShlDHI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink#1', current: true },
   { name: 'Github', href: 'https://github.com/Ivanakowalczuk', current: false },
   { name: 'Linkedin', href: 'https://www.linkedin.com/in/frontend-javascript-react-ivana-kowalczuk/',  current: false },
-  { name: 'Contacto', href: 'https://api.whatsapp.com/send?phone=543515491078',  current: false },
+   { name: 'Contacto', href: 'https://api.whatsapp.com/send?phone=543515491078',  current: false },
 ]
 
 function classNames(...classes:any) {
@@ -18,7 +18,7 @@ function classNames(...classes:any) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="p-4">
+    <Disclosure as="nav" className="px-4 py-2">
       {({ open }) => (
         <>
           <div >
