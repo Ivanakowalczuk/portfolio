@@ -6,7 +6,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const navigation = [
-  { name: 'MI CV', href: 'https://www.canva.com/design/DAFbUShlDHI/MWFY9DlRXx0ifA0xnMXLOQ/view?utm_content=DAFbUShlDHI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink#1', current: true },
+  { name: 'MI CV', href: '/curriculum', current: true },
   { name: 'Github', href: 'https://github.com/Ivanakowalczuk', current: false },
   { name: 'Linkedin', href: 'https://www.linkedin.com/in/frontend-javascript-react-ivana-kowalczuk/',  current: false },
    { name: 'Contacto', href: 'https://api.whatsapp.com/send?phone=543515491078',  current: false },
