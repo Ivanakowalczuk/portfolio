@@ -15,6 +15,9 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animated'),
+    require("tw-elements/dist/plugin.cjs")
+  ],
 }
 export default config

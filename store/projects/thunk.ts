@@ -12,7 +12,7 @@ export const GET_PROJECTS = createAsyncThunk(
                     const resultsProjects = {
                             proyectos: data.data
                     }
-                    console.log('results' + {resultsProjects})
+                
                     return resultsProjects;
                   } catch (error) {
                     console.error('Error fetching data:', error);

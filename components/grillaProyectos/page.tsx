@@ -1,13 +1,18 @@
-import React, { FC, useEffect, useState } from "react";
+import React from "react";
 import Card from "../card/page";
 import { IDataProyecto, IProyecto } from "@/interface";
-
-
 
   const GrillaProyectos= ({proyectos}:  IDataProyecto) => {
   
     return(
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 p-2">
+      <div>
+        <p className="bg-gray-300 h-0.5 m-20"></p>
+           <h2 className="text-center text-gray-300 font-bold  mx-auto text-5xl  md:text-6xl xl:text-7xl animate-rotate-x animate-thrice">
+            MIS PROYECTOS
+            </h2>
+     
+      <article className="grid grid-cols-1 lg:grid-cols-2 gap-4 p-2">
+         
         { proyectos.map((proyecto: IProyecto)=>(
           <>
           <Card 
@@ -20,6 +25,7 @@ import { IDataProyecto, IProyecto } from "@/interface";
            />
           </>
         ))}
+      </article>
       </div>
     )
     

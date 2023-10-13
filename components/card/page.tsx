@@ -1,5 +1,5 @@
 'use client'
-import { IDataProyecto, IProyecto} from '@/interface'
+import {  IProyecto} from '@/interface'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -8,7 +8,7 @@ import React from 'react'
 
 const Card = ({imagen, descripción, repositorio, url, nombre }: IProyecto) => {
   return (
-<div className="max-w-md mx-auto border rounded-xl shadow-md overflow-hidden md:max-w-3xl mt-20">
+<div className="max-w-md mx-auto border rounded-xl shadow-md overflow-hidden md:max-w-3xl mt-20  hover:animate-wiggle animate-infinite animate-fill-backwards">
   <div className="md:flex">
     <div className="md:shrink-0">
       <Image className="h-48 w-full object-cover md:h-full md:w-48" src={imagen} alt='foto proyecto' width={500} height={500}/>

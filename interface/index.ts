@@ -1,5 +1,4 @@
 export interface IProyecto {
-
     _id?: number,
     nombre: string,
     url: string,
@@ -9,8 +8,6 @@ export interface IProyecto {
  
 }
 
-
 export interface IDataProyecto {
     proyectos: IProyecto[]
-
 }

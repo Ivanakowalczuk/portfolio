@@ -1,5 +1,6 @@
 'use client'
 import GrillaProyectos from "@/components/grillaProyectos/page";
+import Portada from "@/components/portada/page";
 import { RootState, useAppDispatch, useAppSelector } from "@/store";
 import { GET_PROJECTS } from "@/store/projects/thunk";
 import { useEffect } from "react";
@@ -23,6 +24,7 @@ export default function Home() {
   }, [])
   return (
     <main className='flex-auto'>
+      <Portada/>
     <GrillaProyectos proyectos={proyectos}/>
     
       </main>

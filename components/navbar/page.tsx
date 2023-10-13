@@ -8,8 +8,8 @@ import Image from 'next/image'
 const navigation = [
   { name: 'MI CV', href: 'https://www.canva.com/design/DAFbUShlDHI/MWFY9DlRXx0ifA0xnMXLOQ/view?utm_content=DAFbUShlDHI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink#1', current: true },
   { name: 'Github', href: 'https://github.com/Ivanakowalczuk', current: false },
-  { name: 'Linkedin', href: 'https://www.linkedin.com/in/frontend-javascript-react-ivana-kowalczuk/', current: false },
-  { name: 'Contacto', href: '', current: false },
+  { name: 'Linkedin', href: 'https://www.linkedin.com/in/frontend-javascript-react-ivana-kowalczuk/',  current: false },
+  { name: 'Contacto', href: 'https://api.whatsapp.com/send?phone=543515491078',  current: false },
 ]
 
 function classNames(...classes:any) {
@@ -18,7 +18,7 @@ function classNames(...classes:any) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className=" bg-gray-800 p-2">
+    <Disclosure as="nav" className="p-4">
       {({ open }) => (
         <>
           <div >
@@ -35,7 +35,7 @@ export default function Navbar() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-center">
                 
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
@@ -43,9 +43,10 @@ export default function Navbar() {
                       <Link
                         key={item.name}
                         href={item.href}
+                        target='_blank'
                         className={classNames(
-                          item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                          'rounded-md px-3 py-2 text-sm font-medium'
+                          item.current ? 'bg-gray-800 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                          'rounded-md px-3 py-2 text-lg font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
@@ -56,15 +57,7 @@ export default function Navbar() {
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <button
-                  type="button"
-                  className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-                >
-                  <span className="absolute -inset-1.5" />
-                  <span className="sr-only">View notifications</span>
-                  <BellIcon className="h-6 w-6" aria-hidden="true" />
-                </button>
-
+            
                 {/* Foto perfil dropdown */}
                 <Menu as="div" className="relative ml-3">
                   <div>
@@ -72,8 +65,8 @@ export default function Navbar() {
                       <span className="absolute -inset-1.5" />
                       <span className="sr-only">Open user menu</span>
                       <Image
-                        className="h-12 w-12 rounded-full"
-                        src='/fotoPerfil.png'
+                        className="h-16 w-16 rounded-full"
+                        src='/18.png'
                         width={100}
                         height={100}
                         alt="foto de perfil"
@@ -93,7 +86,7 @@ export default function Navbar() {
                       <Menu.Item>
                         {({ active }) => (
                             
-                          <Image alt='Foto Perfil' width={200} height={200} src='/fotoPerfil.png'/>
+                          <Image alt='Foto Perfil' width={200} height={200} src='/18.png'/>
 
                       
                         )}
