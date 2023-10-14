@@ -6,10 +6,12 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const navigation = [
-  { name: 'MI CV', href: '/curriculum', current: true },
-  { name: 'Github', href: 'https://github.com/Ivanakowalczuk', current: false },
-  { name: 'Linkedin', href: 'https://www.linkedin.com/in/frontend-javascript-react-ivana-kowalczuk/',  current: false },
-   { name: 'Contacto', href: 'https://api.whatsapp.com/send?phone=543515491078',  current: false },
+  { name: 'Mis Proyectos', href: '/proyectos', current: true },
+  { name: 'Mi CV', href: '/curriculum', current: false },
+  { name: 'Github', href: 'https://github.com/Ivanakowalczuk',   target:'_blank', current: false },
+  { name: 'Linkedin', href: 'https://www.linkedin.com/in/frontend-javascript-react-ivana-kowalczuk/',    target:'_blank', current: false },
+   { name: 'Contacto', href: 'https://api.whatsapp.com/send?phone=543515491078',   target:'_blank', current: false },
+
 ]
 
 function classNames(...classes:any) {
@@ -22,12 +24,32 @@ export default function Navbar() {
       {({ open }) => (
         <>
           <div >
-            <div className="relative flex h-16 w-100 items-center justify-between">
-              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <div className="relative flex h-16 w-100 items-center justify-between mx-4">
+            <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+            
+            {/* Foto perfil dropdown */}
+           
+              <div>
+                <Link href='/' className="relative flex rounded-full  text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                  <Image
+                    className="h-14 w-14 rounded-full"
+                    src='/24.svg'
+                    width={100}
+                    height={100}
+                    alt="foto de perfil"
+                  />
+                </Link>
+              </div>
+              <div>
+            <p className='relative flex text-white ml-5  w-60 text-sm hidden md:block'>La perseverancia es el secreto de todos los triunfos</p>
+          </div>      
+          </div>
+        
+              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden ">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="absolute -inset-0.5" />
-                  <span className="sr-only">Open main menu</span>
+                
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
                   ) : (
@@ -35,18 +57,18 @@ export default function Navbar() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-center">
+              <div className="flex  items-center justify-between sm:items-stretch sm:justify-center ">
                 
                 <div className="hidden sm:ml-6 sm:block">
-                  <div className="flex space-x-4">
+                  <div className="flex space-x-4 mr-20 mt-5">
                     {navigation.map((item) => (
                       <Link
                         key={item.name}
                         href={item.href}
-                        target='_blank'
+                        target={item.target}
                         className={classNames(
                           item.current ? 'bg-gray-800 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                          'rounded-md px-3 py-2 text-lg font-medium'
+                          'rounded-md px-3 py-2 text-lg font-medium text-center'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
@@ -55,45 +77,6 @@ export default function Navbar() {
                     ))}
                   </div>
                 </div>
-              </div>
-              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-            
-                {/* Foto perfil dropdown */}
-                <Menu as="div" className="relative ml-3">
-                  <div>
-                    <Menu.Button className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
-                      <span className="absolute -inset-1.5" />
-                      <span className="sr-only">Open user menu</span>
-                      <Image
-                        className="h-16 w-16 rounded-full"
-                        src='/18.png'
-                        width={100}
-                        height={100}
-                        alt="foto de perfil"
-                      />
-                    </Menu.Button>
-                  </div>
-                  <Transition
-                    as={Fragment}
-                    enter="transition ease-out duration-100"
-                    enterFrom="transform opacity-0 scale-95"
-                    enterTo="transform opacity-100 scale-100"
-                    leave="transition ease-in duration-75"
-                    leaveFrom="transform opacity-100 scale-00"
-                    leaveTo="transform opacity-0 scale-95"
-                  >
-                    <Menu.Items className="w-48 mt-20 rounded-full focus:outline-none">
-                      <Menu.Item>
-                        {({ active }) => (
-                            
-                          <Image alt='Foto Perfil' width={200} height={200} src='/18.png'/>
-
-                      
-                        )}
-                      </Menu.Item>
-                    </Menu.Items>
-                  </Transition>
-                </Menu>
               </div>
             </div>
           </div>

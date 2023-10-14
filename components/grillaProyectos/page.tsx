@@ -6,8 +6,8 @@ import { IDataProyecto, IProyecto } from "@/interface";
   
     return(
       <div>
-        <p className="bg-gray-300 h-0.5 m-20"></p>
-           <h2 className="text-center text-gray-300 font-bold  mx-auto text-5xl  md:text-6xl xl:text-7xl animate-rotate-x animate-thrice">
+     
+           <h2 className="text-center text-white font-bold  mx-auto text-5xl  md:text-6xl xl:text-7xl animate-rotate-x animate-thrice">
             MIS PROYECTOS
             </h2>
      

@@ -17,7 +17,7 @@ export default function Home() {
   );
 
   const dispatch = useAppDispatch();
-  console.log(proyectos)
+ 
   useEffect(()=>{
    dispatch(GET_PROJECTS(url))
  
@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <main className='flex-auto'>
       <Portada/>
-    <GrillaProyectos proyectos={proyectos}/>
+      
     
       </main>
   )
