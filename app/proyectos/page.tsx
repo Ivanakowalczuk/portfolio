@@ -1,11 +1,11 @@
 'use client'
-import React, { useEffect } from 'react'
+import React, { FC, useEffect } from 'react'
 import GrillaProyectos from '@/components/grillaProyectos/page'
 import { useSelector } from 'react-redux';
 import { RootState, useAppDispatch } from '@/store';
 import { GET_PROJECTS } from '@/store/projects/thunk';
 
-const proyectos= () => {
+const Proyectos:FC= () => {
     const url = "/api/projects"
 
   const { proyectos} = useSelector(
@@ -27,4 +27,4 @@ const proyectos= () => {
   )
 }
 
-export default proyectos
+export default Proyectos
