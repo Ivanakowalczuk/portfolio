@@ -22,7 +22,7 @@ const Portada = () => {
              Apasionada por la tecnología y la programación. 
              Constantemente busco aplicar mis conocimientos 
              y seguir desarrollándome profesionalmente. 
-             Actualmente estoy cursando especialización en Front End. Mi aspiración, ser una experta desarrolladora web fullstack 
+             Actualmente estoy cursando la Especialización en Front End en Digital House. Mi aspiración, ser una experta desarrolladora web fullstack 
              con las tecnologías más innovadoras de javascript, React, Next.js, Node.js, Express, MongoDB y MYSQL. 
             </p>
             <Link href='/proyectos'><h2 className='text-blue-600 text-lg font-bold underline mb-6 mt-10 '>Ver Proyectos</h2></Link>
