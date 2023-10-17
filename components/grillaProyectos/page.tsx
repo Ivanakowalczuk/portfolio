@@ -22,6 +22,7 @@ import { IDataProyecto, IProyecto } from "@/interface";
           descripción={proyecto.descripción} 
           url={proyecto.url} 
           repositorio={proyecto.repositorio} 
+     
            />
           </>
         ))}
