@@ -10,4 +10,13 @@
 
 body {
   background:black;
+  overflow: auto; /*Graceful degradation para Firefox*/
+  overflow: overlay;/*Progressive enhancement para Opera*/
+  scrollbar-gutter: stable
+  
 }
+
+body::-webkit-scrollbar {
+  background-color: transparent;
+ }
+
