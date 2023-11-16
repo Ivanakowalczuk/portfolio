@@ -7,7 +7,7 @@ const Portada = () => {
   return (
     <div>
 
-<div className="container  my-2 mx-auto md:px-6 portada ">
+<div className="container  my-2 mx-auto md:px-6  ">
   <section className="text-center animate-jump-out animate-once animate-ease-in-out animate-alternate-reverse  animate-duration-[2000ms]">
         <div className="px-4 py-10 md:px-6 lg:text-left text-center">
           <div className="grid gap-8 lg:grid-cols-2 ">
