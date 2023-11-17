@@ -5,13 +5,11 @@ import React from 'react'
 
 const Portada = () => {
   return (
-    <div>
-
-<div className="container  my-2 mx-auto md:px-6  ">
-  <section className="text-center animate-jump-out animate-once animate-ease-in-out animate-alternate-reverse  animate-duration-[2000ms]">
-        <div className="px-4 py-10 md:px-6 lg:text-left text-center">
-          <div className="grid gap-8 lg:grid-cols-2 ">
-          <div >
+ <div className="flex w-3/4 my-8 ">
+  <section className="flex text-center animate-jump-out animate-once animate-ease-in-out animate-alternate-reverse  animate-duration-[2000ms]">
+        <div className="">
+          <div className="flex lg:flex-row flex-col">
+          <div className='px-4 py-10 md:px-6 lg:text-left text-center flex-col justify-center '>
             <h1 className="mb-6 text-5xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-red-600 md:text-6xl xl:text-8xl ">
              Ivana Kowalczuk<br /><span className="text-white xl:text-3x2">Developer</span>
             </h1>
@@ -36,7 +34,7 @@ const Portada = () => {
 
 
 
-    </div>
+   
   )
 }
 

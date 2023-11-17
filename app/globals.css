@@ -2,8 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  margin: 0;
+}
+
 :root {
-  --background-start-rgb: 0, 0, 0;
+  background: 0, 0, 0;
+   margin: 0;
+   padding: 0;
+   width: 100vw;
+   box-sizing: 0;  
   
 }
 
@@ -14,10 +22,17 @@ body {
   overflow: auto; 
   overflow: overlay;
   scrollbar-gutter: stable;
-  
+
 }
 
 body::-webkit-scrollbar {
   background-color: transparent;
  }
 
+.main{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+
+}

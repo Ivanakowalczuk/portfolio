@@ -18,7 +18,7 @@ export const POST =async (req:NextRequest, res:NextResponse) => {
 export const GET =async () => {
     await dbConnect()
     try{
-      const result = await ProjectModel.find({})
+      const result = await ProjectModel.find({}).sort({ id: 1 });
       return NextResponse.json({data:result}, {status:200})
     }catch(error){
       console.log(error)

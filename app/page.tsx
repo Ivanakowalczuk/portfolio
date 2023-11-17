@@ -23,10 +23,8 @@ export default function Home() {
  
   }, [])
   return (
-    <main className='flex-auto'>
+    <main className="main">
       <Portada/>
-      
-    
-      </main>
+    </main>
   )
 }

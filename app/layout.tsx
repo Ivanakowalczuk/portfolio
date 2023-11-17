@@ -19,18 +19,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      
-      <body className={inter.className}>
-        <div className='h-screen'>
+      <body>
          <Navbar/>
-      
-      <div className='mt-8 mx-auto p-4'>
-      <Providers>
+      <div className='mt-10 h-screen mx-10'>
+      <Providers >
       {children}
       </Providers>
       </div>
-     
-        </div>
       </body>
     </html>
   )
