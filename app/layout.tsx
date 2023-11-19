@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body>
-         <Navbar/>
+        <Navbar/>
       <div className='mt-10 h-screen mx-10'>
       <Providers >
       {children}

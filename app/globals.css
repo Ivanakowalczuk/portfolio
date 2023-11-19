@@ -4,6 +4,7 @@
 
 *{
   margin: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -35,4 +36,11 @@ body::-webkit-scrollbar {
   align-content: center;
   flex-wrap: nowrap;
 
+}
+
+.fotoPortada{
+  display: block;
+  margin: auto;
+  min-width: 400px;
+  max-height: 500px;
 }
