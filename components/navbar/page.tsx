@@ -9,7 +9,7 @@ const navigation = [
   { name: 'Mi CV', href: '/curriculum', current: false },
   { name: 'Github', href: 'https://github.com/Ivanakowalczuk',   target:'_blank', current: false },
   { name: 'Linkedin', href: 'https://www.linkedin.com/in/frontend-javascript-react-ivana-kowalczuk/',    target:'_blank', current: false },
-   { name: 'Contacto', href: 'https://api.whatsapp.com/send?phone=543515491078',   target:'_blank', current: false },
+   { name: 'Contacto', href: '/contact',  current: false },
 
 ]
 
