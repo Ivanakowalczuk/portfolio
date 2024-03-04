@@ -1,4 +1,5 @@
 import { FormData } from "@/components/contact/page";
+import Swal from "sweetalert2";
 
 
 
@@ -11,9 +12,19 @@ export function sendEmail(data: FormData) {
     })
       .then((res) => res.json())
       .then((response) => {
-        alert(response.message);
+        Swal.fire({
+            icon: "success",
+            title: response.message,
+            showConfirmButton: false,
+            timer: 1500
+          });;
       })
-      .catch((err) => {
-        alert(err);
+      .catch((error) => {
+        Swal.fire({
+            icon: "error",
+            title: error,
+            showConfirmButton: false,
+            timer: 1500
+          });
       });
   }
