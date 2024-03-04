@@ -2,9 +2,8 @@
 'use client';
 
 import { sendEmail } from '@/utils/send-emails';
-import { FC } from 'react';
+import { FC, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
-
 
 export type FormData = {
   name: string;
@@ -13,14 +12,17 @@ export type FormData = {
 };
 
 const Contact: FC = () => {
-  const { register, handleSubmit } = useForm<FormData>();
+  const { register, handleSubmit, formState: { isSubmitSuccessful }, reset } = useForm<FormData>();
 
-  function onSubmit(data: FormData) {
+  async function onSubmit(data: FormData) {
     sendEmail(data);
+    const form = document.getElementById('contactForm') as HTMLFormElement; 
+    form.reset();
   }
 
+  
   return (
-    <form className='flex-col justify-center lg:w-1/2 md:w-3/4 sm:w-full ' onSubmit={handleSubmit(onSubmit)}>
+    <form id="contactForm" className='flex-col justify-center lg:w-1/2 md:w-3/4 sm:w-full ' onSubmit={handleSubmit(onSubmit)}>
       <div className='mb-5'>
         <label
           htmlFor='name'
