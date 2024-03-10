@@ -10,7 +10,7 @@ const Card = ({imagen, descripción, repositorio, url, nombre }: IProyecto) => {
   return (
 <div className="mx-5 h-auto max-w-md border rounded-xl shadow-md overflow-hidden md:max-w-3xl mt-20  hover:animate-wiggle animate-infinite animate-fill-backwards">
   <div className="md:flex h-full">
-    <div className="bg-red-600 md:h-full  md:w-2/5">
+    <div className="md:h-full  md:w-2/5">
       <Image className="h-full object-cover " src={imagen} alt='foto proyecto' width={500} height={500}/>
     </div>
     <div className="p-8 md:w-3/5">
