@@ -6,7 +6,7 @@ import React from 'react'
 const Portada = () => {
   return (
  
-  <section className="m-auto w-full my-8 justify-items-center items-center flex flex-col lg:flex-row lg:text-left text-center animate-jump-out animate-once animate-ease-in-out animate-alternate-reverse  animate-duration-[2000ms]">
+  <section className="mx-auto w-full my-8 justify-items-center items-center flex flex-col lg:flex-row lg:text-left text-center animate-jump-out animate-once animate-ease-in-out animate-alternate-reverse  animate-duration-[2000ms]">
             <div className='justify-items-center items-center w-full'>
                 <h1 className="mb-6 text-5xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-red-600 md:text-6xl xl:text-8xl ">
                 Ivana Kowalczuk<br /><span className="text-white xl:text-3x2">Developer</span>
@@ -21,8 +21,8 @@ const Portada = () => {
                 </p>
                 <Link href='/proyectos'><h2 className='text-blue-600 text-lg font-bold underline mb-6 mt-10 '>Ver Proyectos</h2></Link>
           </div>
-          <div className='items-center'>
-          <Image  src="/fotoPerfil2.png" width='350' height='350' alt='foto de perfil' />    
+          <div >
+          <Image  src="/fotoPerfil2.png" width='400' height='400' alt='foto de perfil' />    
           </div>
 
   </section>
