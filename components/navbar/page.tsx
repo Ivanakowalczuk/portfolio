@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const navigation = [
   { name: 'Mis Proyectos', href: '/proyectos', current: true },
-  { name: 'Mi CV', href: './CV_IVANA_KOWALCZUK.pdf', current: false, target:'_blank' },
+  { name: 'Mi CV', href: '/CV_IVANA_KOWALCZUK.pdf', current: false, target:'_blank' },
   { name: 'Github', href: 'https://github.com/Ivanakowalczuk',   target:'_blank', current: false },
   { name: 'Linkedin', href: 'https://www.linkedin.com/in/frontend-javascript-react-ivana-kowalczuk/',    target:'_blank', current: false },
    { name: 'Contacto', href: '/contact',  current: false },
