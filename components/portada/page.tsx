@@ -19,7 +19,7 @@ const Portada = () => {
                 Actualmente estoy cursando la Especialización en Front End en Digital House. Mi aspiración, ser una experta desarrolladora web fullstack 
                 con las tecnologías más innovadoras de javascript, React, Next.js, Node.js, Express, MongoDB y MYSQL. 
                 </p>
-                <Link href='/proyectos'><h2 className='text-blue-600 text-lg font-bold underline mb-6 mt-10 '>Ver Proyectos</h2></Link>
+                <Link href='/proyectos'><h2 className='text-blue-500 text-lg font-bold underline mb-6 mt-10 '>Ver Proyectos</h2></Link>
           </div>
           <div >
           <Image  src="/fotoPerfil2.png" width='400' height='400' alt='foto de perfil' />    

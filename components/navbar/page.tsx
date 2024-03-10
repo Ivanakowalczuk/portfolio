@@ -62,6 +62,8 @@ export default function Navbar() {
                         key={item.name}
                         href={item.href}
                         target={item.target}
+                        aria-label={item.name}
+                        id={`button${item.name}`}                     
                         className={classNames(
                           item.current ? 'bg-gray-800 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                           'rounded-md px-3 py-2 text-lg font-medium text-center'

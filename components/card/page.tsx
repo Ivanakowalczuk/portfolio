@@ -15,9 +15,9 @@ const Card = ({imagen, descripción, repositorio, url, nombre }: IProyecto) => {
     </div>
     <div className="p-8 md:w-3/5">
       <div className="uppercase tracking-wide text-lg text-white-500 font-semibold">{nombre}</div>
-      <Link href={url}   target="_blank" className="block mt-1 text-lg leading-tight font-medium text-blue-600 hover:underline">Ver demo</Link>
+      <Link href={url}   target="_blank" className="block mt-1 text-lg leading-tight font-medium text-blue-500 hover:underline">Ver demo</Link>
       <p className="mt-4 mb-4 text-white">{descripción}</p>
-      <Link href={repositorio}  target="_blank" className="block mt-1 text-sm leading-tight font-medium text-blue-400 hover:underline">Ver repositorio</Link>
+      <Link href={repositorio}  target="_blank" className="block mt-1 text-sm leading-tight font-medium text-blue-300 hover:underline">Ver repositorio</Link>
     </div>
   </div>
 </div>
