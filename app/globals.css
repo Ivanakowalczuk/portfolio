@@ -31,16 +31,10 @@ body::-webkit-scrollbar {
  }
 
 .main{
-  display: flex;
+   display: flex;
   justify-content: center;
   align-content: center;
   flex-wrap: nowrap;
 
 }
 
-.fotoPortada{
-  display: block;
-  margin: auto;
-  min-width: 400px;
-  max-height: 500px;
-}

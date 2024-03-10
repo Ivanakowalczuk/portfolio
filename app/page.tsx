@@ -23,7 +23,7 @@ export default function Home() {
  
   }, [])
   return (
-    <main className="main">
+    <main className="flex w-full  h-full px-10">
       <Portada/>
     </main>
   )

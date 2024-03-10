@@ -5,7 +5,7 @@ import { IDataProyecto, IProyecto } from "@/interface";
   const GrillaProyectos= ({proyectos}:  IDataProyecto) => {
   
     return(
-      <div>
+      <div className="items-center">
      
            <h2 className="text-center text-white font-bold  mx-auto text-5xl  md:text-6xl xl:text-7xl animate-rotate-x animate-thrice">
             MIS PROYECTOS

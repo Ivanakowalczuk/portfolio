@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const navigation = [
   { name: 'Mis Proyectos', href: '/proyectos', current: true },
-  { name: 'Mi CV', href: '/curriculum', current: false },
+  { name: 'Mi CV', href: './CV_IVANA_KOWALCZUK.pdf', current: false, target:'_blank' },
   { name: 'Github', href: 'https://github.com/Ivanakowalczuk',   target:'_blank', current: false },
   { name: 'Linkedin', href: 'https://www.linkedin.com/in/frontend-javascript-react-ivana-kowalczuk/',    target:'_blank', current: false },
    { name: 'Contacto', href: '/contact',  current: false },
@@ -19,7 +19,7 @@ function classNames(...classes:any) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="px-4 py-2">
+    <Disclosure as="nav" className="px-4 py-2 mb-10">
       {({ open }) => (
         <>
           <div >

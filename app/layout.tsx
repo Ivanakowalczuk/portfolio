@@ -18,14 +18,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="es">
-      <body>
+    <html  lang="es">
+      <body className='flex flex-col w-full h-screen'>
         <Navbar/>
-      <div className='mt-10 h-screen mx-10'>
-      <Providers >
-      {children}
-      </Providers>
-      </div>
+        <div className='m-auto lg:w-11/12 h-full'>
+        <Providers >
+        {children}
+        </Providers>
+        </div>
       </body>
     </html>
   )
