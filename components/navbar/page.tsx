@@ -32,7 +32,9 @@ export default function Navbar() {
                     src='/24.svg'
                     width={100}
                     height={100}
-                    alt="foto de perfil"
+                    alt="logo"
+                    aria-label="logo"
+                    id="Button logo"
                   />
                 </Link>
               </div>
@@ -86,6 +88,8 @@ export default function Navbar() {
                   key={item.name}
                   as="a"
                   href={item.href}
+                  aria-label={item.name}
+                  id={`button${item.name}`}  
                   className={classNames(
                     item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                     'block rounded-md px-3 py-2 text-base font-medium'
