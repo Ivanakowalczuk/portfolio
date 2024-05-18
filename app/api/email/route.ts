@@ -25,8 +25,8 @@ export async function POST(request: NextRequest) {
 
   const mailOptions: Mail.Options = {
     from: process.env.MY_EMAIL,
-    to: 'ivanakowal@gmail.com',
-    cc: 'kowys@hotmail.com',
+    to: 'ivanakowalczuk@gmail.com',
+    cc: 'ivanakowal@gmail.com',
     subject: `Mensaje de ${name} (${email})`,
     text: message,
   };
