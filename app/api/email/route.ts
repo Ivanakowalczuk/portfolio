@@ -1,7 +1,6 @@
 import { type NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 import Mail from 'nodemailer/lib/mailer';
-import Swal2 from 'sweetalert2';
 
 export async function POST(request: NextRequest) {
   const { email, name, message } = await request.json();
@@ -35,7 +34,7 @@ export async function POST(request: NextRequest) {
     new Promise<string>((resolve, reject) => {
       transport.sendMail(mailOptions, function (err) {
         if (!err) {
-           
+          
           resolve('Email sent');
         } else {
           reject(err.message);

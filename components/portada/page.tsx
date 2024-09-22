@@ -11,18 +11,26 @@ const Portada = () => {
                 <h1 className="mb-6 text-5xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-red-600 md:text-6xl xl:text-8xl ">
                 Ivana Kowalczuk<br /><span className="text-white xl:text-3x2">Developer</span>
                 </h1>
-                <p className="text-lg text-[hsl(218,81%,95%)]  ">
-                Desarrolladora Web con React.js y Next.js. 
-                Apasionada por la tecnología y la programación. 
-                Constantemente busco aplicar mis conocimientos 
-                y seguir desarrollándome profesionalmente. 
-                Actualmente estoy cursando la Especialización en Front End en Digital House. Mi aspiración, ser una experta desarrolladora web fullstack 
-                con las tecnologías más innovadoras de javascript, React, Next.js, Node.js, Express, MongoDB y MYSQL. 
+                <p className="text-lg text-[hsl(218,81%,95%)] my-10 ">
+                Front End Specialist. Técnica en programación. 
+                Diseño y desarrollo de aplicaciones web con las tecnologías de React.js, Next.js, Mongo DB, SQL, Node.js y Express. 
+                Gestión de marketing para negocios con google Ads, Google Analitic y Google Tag Manager. Diseño de interfaces con Figma. Testing manual y automatizado con Java y Selenium, Jest, 
+                React Testing Library. Administración de Cloud Server en AWS y otros.
+                Actualmente trabajo freelance para profesionales interesados en hacer conocer su marca creando sitios web responsivos y administrando los servicios de marketing. 
+                También, brindo servicios a GOINGADS para diferentes clientes que requieren de mis conocimientos en sus proyectos. 
                 </p>
-                <Link href='/proyectos'><h2 className='text-blue-500 text-lg font-bold underline mb-6 mt-10 '>Ver Proyectos</h2></Link>
+                <div className='flex justify-start gap-8 mb-6'>
+                <Link href='/proyectos' className='rounded-md bg-[#A63860] border-4 border-[#A63860] py-3 px-8 text-base font-semibold text-white outline-none hover:bg-gradient-to-r hover:from-blue-600/80 hover:to-red-600/80 '>
+                 Proyectos académicos
+                 </Link>
+
+                 <Link href='/enConstruccionPage' className='rounded-md border-4 border-blue-600 py-3 px-8 text-base font-semibold text-white outline-none hover:bg-gradient-to-r hover:from-blue-600/80 hover:to-red-600/80 '>
+                 Proyectos laborales
+                 </Link>
+                 </div>
           </div>
           <div >
-          <Image  src="/fotoPerfil2.png" width='400' height='400' alt='foto de perfil' />    
+          <Image  src="/fotoPerfil.png" width='600' height='600' alt='foto de perfil' />    
           </div>
 
   </section>

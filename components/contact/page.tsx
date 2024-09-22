@@ -66,7 +66,7 @@ const Contact: FC = () => {
         ></textarea>
       </div>
       <div>
-        <button className='hover:shadow-form rounded-md bg-gradient-to-r from-blue-600 to-red-600 py-3 px-8 text-base font-semibold text-white outline-none'>
+        <button className='rounded-md bg-gradient-to-r from-blue-600 to-red-600 py-3 px-8 text-base font-semibold text-white outline-none hover:bg-gradient-to-r hover:from-blue-600/80 hover:to-red-600/80 '>
           Enviar
         </button>
       </div>
