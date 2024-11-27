@@ -7,7 +7,7 @@ import { IDataProyecto, IProyecto } from "@/interface";
     return(
       <div className="items-center min-h-screen">
      
-           <h2 className="text-center  text-gray-100 font-bold  mx-auto text-5xl  md:text-6xl xl:text-7xl animate-fade-down">
+           <h2 className="text-center  text-gray-100 font-bold  mx-auto text-4xl  md:text-4xl  animate-fade-down">
             MIS PROYECTOS
             </h2>
      
