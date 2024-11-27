@@ -7,7 +7,7 @@ const Description = () => {
     {/* Imagen */}
     <div className="relative w-full h-full rounded-lg overflow-hidden shadow-lg">
       <Image
-        src="/fotoperfilFondoGris.png" 
+        src="https://raw.githubusercontent.com/Ivanakowalczuk/portfolio/refs/heads/master/public/fotoPerfilFondoGris.png" 
         alt="Profile Picture"
         layout="fill"
         objectFit="cover"
