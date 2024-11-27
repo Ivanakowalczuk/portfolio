@@ -15,6 +15,7 @@ const nextConfig = {
       },
     ],
   },
+   transpilePackages: ['lucide-react']
 };
 
 module.exports = withPWA(nextConfig);

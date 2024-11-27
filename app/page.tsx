@@ -1,5 +1,5 @@
 'use client'
-import GrillaProyectos from "@/components/grillaProyectos/page";
+import GrillaProyectos from "@/components/grillaProyectos/GrillaProyectos";
 import Portada from "@/components/portada/page";
 import { RootState, useAppDispatch, useAppSelector } from "@/store";
 import { GET_PROJECTS } from "@/store/projects/thunk";
@@ -23,7 +23,7 @@ export default function Home() {
  
   }, [])
   return (
-    <main className="flex w-full  h-full px-10">
+    <main className="min-h-screen flex w-full  px-10 ">
       <Portada/>
     </main>
   )

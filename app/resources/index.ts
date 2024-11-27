@@ -1,0 +1,1 @@
+export {routes, baseUrl} from '@/app/resources/config'

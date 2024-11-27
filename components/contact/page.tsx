@@ -2,7 +2,7 @@
 'use client';
 
 import { sendEmail } from '@/utils/send-emails';
-import { FC, useEffect } from 'react';
+import { FC } from 'react';
 import { useForm } from 'react-hook-form';
 
 export type FormData = {
@@ -22,8 +22,8 @@ const Contact: FC = () => {
 
   
   return (
-    <form id="contactForm" className='flex-col justify-center lg:w-1/2 md:w-3/4 sm:w-full ' onSubmit={handleSubmit(onSubmit)}>
-      <div className='mb-5'>
+    <form id="contactForm" className='flex-col justify-center items-center sm:w-[500px] sm:ml-20' onSubmit={handleSubmit(onSubmit)}>
+      <div className='mb-5 '>
         <label
           htmlFor='name'
           className='mb-2 block text-base font-medium text-white'

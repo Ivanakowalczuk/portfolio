@@ -1,6 +1,6 @@
 'use client'
 import React, { FC, useEffect } from 'react'
-import GrillaProyectos from '@/components/grillaProyectos/page'
+import GrillaProyectos from '@/components/grillaProyectos/GrillaProyectos'
 import { useSelector } from 'react-redux';
 import { RootState, useAppDispatch } from '@/store';
 import { GET_PROJECTS } from '@/store/projects/thunk';

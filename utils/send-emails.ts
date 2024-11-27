@@ -1,8 +1,6 @@
 import { FormData } from "@/components/contact/page";
 import Swal from "sweetalert2";
 
-
-
 export function sendEmail(data: FormData) {
     const apiEndpoint = '/api/email';
   

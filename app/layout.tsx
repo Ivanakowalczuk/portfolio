@@ -1,7 +1,11 @@
-import Navbar from '@/components/navbar/page'
+import Navbar from '@/components/navbar/headerMobile'
 import './globals.css'
 import { Inter } from 'next/font/google'
 import { Providers } from './provider'
+import Menu from '@/components/navbar/menu'
+import HeaderMobile from '@/components/navbar/headerMobile'
+import Header from '@/components/navbar/header'
+import Footer from '@/components/footer/footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,14 +28,16 @@ export default function RootLayout({
 }) {
   return (
  
-    <html  lang="es">
-      <body className='flex flex-col w-full h-screen'>
-        <Navbar/>
-        <div className='m-auto lg:w-11/12 h-full'>
+    <html  lang="es" >
+      <body className='flex flex-col justify-between  '>
+        <HeaderMobile/>
+        <Header/>
+        <div className='mx-auto lg:w-11/12 '>
         <Providers >
         {children}
         </Providers>
         </div>
+        <Footer/>
       </body>
     </html>
    

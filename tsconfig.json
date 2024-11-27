@@ -23,6 +23,6 @@
     }
   },
   
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "lib/dbConnect.ts", "components/grillaProyectos/page.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "lib/dbConnect.ts", "components/grillaProyectos/GrillaProyectos.tsx", "utils/cn.ts"],
   "exclude": ["node_modules"]
 }
