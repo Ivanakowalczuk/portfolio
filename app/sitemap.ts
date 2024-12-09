@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next'
-import { baseUrl } from './resources'
- 
+import { baseUrl, baseUrl2 } from './resources'
+
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
@@ -27,5 +28,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: 'weekly',
         priority: 0.5,
       },
+      {
+        url: `${baseUrl2}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly',
+        priority: 1,
+      },
+      {
+        url: `${baseUrl2}/aboutMe`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly',
+        priority: 0.8,
+      },
+      {
+        url: `${baseUrl2}/proyectos`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly',
+        priority: 0.5,
+      },
+      {
+          url: `${baseUrl2}/contact`,
+          lastModified: new Date(),
+          changeFrequency: 'weekly',
+          priority: 0.5,
+        },
   ]
 }

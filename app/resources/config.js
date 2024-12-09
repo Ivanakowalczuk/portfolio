@@ -1,4 +1,6 @@
-const baseUrl = 'ivanadev.com.ar'
+const baseUrl = 'https://ivanadev.com.ar'
+const baseUrl2 = 'https://ivanakowal.com.ar'
+
 
 const routes = {
     '/': true,
@@ -7,4 +9,4 @@ const routes = {
     '/contact':true,
 }
 
-export {baseUrl, routes}
+export { baseUrl, routes, baseUrl2}
