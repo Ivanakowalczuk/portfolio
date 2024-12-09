@@ -1,11 +1,10 @@
-import Navbar from '@/components/navbar/headerMobile'
 import './globals.css'
 import { Inter } from 'next/font/google'
 import { Providers } from './provider'
-import Menu from '@/components/navbar/menu'
 import HeaderMobile from '@/components/navbar/headerMobile'
 import Header from '@/components/navbar/header'
 import Footer from '@/components/footer/footer'
+import { baseUrl, baseUrl2 } from './resources'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,8 +16,12 @@ export const metadata = {
   icons:{
     apple: "/icon.png"
   },
-  themeColor: "#000"
-
+  themeColor: "#000",
+  robots: 'index, follow',
+  sitemap: [
+    `${baseUrl}/sitemap.xml`,
+    `${baseUrl2}/sitemap.xml`, 
+  ],
 }
 
 export default function RootLayout({
