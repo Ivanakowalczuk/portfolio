@@ -20,10 +20,10 @@ export default function Home() {
  
   useEffect(()=>{
    dispatch(GET_PROJECTS(url))
- 
-  }, [])
+   }, [])
+
   return (
-    <main className="min-h-screen flex w-full  px-10 ">
+    <main className="flex w-full  px-10 ">
       <Portada/>
     </main>
   )

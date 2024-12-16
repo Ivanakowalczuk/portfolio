@@ -50,6 +50,9 @@ importers:
       nodemailer:
         specifier: ^6.9.11
         version: 6.9.11
+      portfolio:
+        specifier: 'link:'
+        version: 'link:'
       react:
         specifier: ^18.2.0
         version: 18.2.0

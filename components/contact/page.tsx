@@ -22,46 +22,47 @@ const Contact: FC = () => {
 
   
   return (
-    <form id="contactForm" className='flex-col justify-center items-center sm:w-[500px] sm:ml-20' onSubmit={handleSubmit(onSubmit)}>
+    <form id="contactForm" className='flex-col justify-center items-center sm:w-[500px] sm:m-auto' onSubmit={handleSubmit(onSubmit)}>
+      <h1 className="text-4xl text-center font-bold text-gray-100 mb-4 animate-fade-down">CONTACTAME</h1>
       <div className='mb-5 '>
         <label
           htmlFor='name'
-          className='mb-2 block text-base font-medium text-white'
+          className='mb-2 text-base text-white'
         >
           Nombre y apellido
         </label>
         <input
           type='text'
           placeholder='Nombre y apellido'
-          className='w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700  focus:border-purple-500 focus:shadow-md'
+          className='w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base  text-gray-700  focus:border-purple-500 focus:shadow-md'
           {...register('name', { required: true })}
         />
       </div>
       <div className='mb-5'>
         <label
           htmlFor='email'
-          className='mb-2 block text-base font-medium text-white'
+          className='mb-2 text-base text-white'
         >
           Email
         </label>
         <input
           type='email'
           placeholder='nombre@email.com'
-          className='w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 focus:border-purple-500 focus:shadow-md'
+          className='w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base text-gray-700 focus:border-purple-500 focus:shadow-md'
           {...register('email', { required: true })}
         />
       </div>
       <div className='mb-5'>
         <label
           htmlFor='message'
-          className='mb-2 block text-base font-medium text-white'
+          className='mb-2 text-base text-white'
         >
           Mensaje
         </label>
         <textarea
           rows={4}
           placeholder='Escribe tu mensaje'
-          className='w-full resize-none rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700  focus:border-purple-500 focus:shadow-md'
+          className='w-full resize-none rounded-md border border-gray-300 bg-white py-3 px-6 text-base text-gray-700  focus:border-purple-500 focus:shadow-md'
           {...register('message', { required: true })}
         ></textarea>
       </div>

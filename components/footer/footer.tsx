@@ -6,8 +6,7 @@ const Footer = () => {
     const currentYear = new Date().getFullYear();
 
   return (
-    <div className='flex flex-col  gap-2 justify-between items-center  py-2 border-t border-gray-900 px-20 text-gray-100 mt-24 md:flex-row '>
-      
+    <div className='flex flex-col  gap-2 justify-between items-center text-center py-2 border-t border-gray-900 px-20 mt-16 text-gray-100  md:flex-row '>
       <p >@{currentYear } Ivana kowalczuk. </p>
       <p>Todos los derechos reservados</p>
       <div className='flex gap-6'>

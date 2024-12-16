@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
  
     <html  lang="es" >
-      <body className='flex flex-col justify-between  '>
+      <body className='flex flex-col min-h-screen justify-between'>
         <HeaderMobile/>
         <Header/>
         <div className='mx-auto lg:w-11/12 '>
