@@ -4,7 +4,7 @@ import GrillaProyectos from '@/components/grillaProyectos/GrillaProyectos'
 import { IProyecto } from '@/interface';
 
 const Proyectos:FC = async () => {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/projects`, {
+  const res = await fetch(`/api/projects`, {
     cache: "no-store", // Evitar cacheo para datos actualizados
 });
 
