@@ -1,27 +1,24 @@
-'use client'
-import React, { FC, useEffect } from 'react'
+import React from 'react'
 import GrillaProyectos from '@/components/grillaProyectos/GrillaProyectos'
-import { IProyecto } from '@/interface';
+import { IProyecto } from '@/interface'
 
-const Proyectos:FC = async () => {
-  const res = await fetch(`/api/projects`, {
-    cache: "no-store", // Evitar cacheo para datos actualizados
-});
+const Proyectos = async () => {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/projects`, {
+    cache: "no-store",
+  });
 
-if (!res.ok) {
+  if (!res.ok) {
     throw new Error("Error al obtener los proyectos");
-}
+  }
 
-const data = await res.json();
-const projects: IProyecto[] = data.projects;
+  const data = await res.json();
+  const projects: IProyecto[] = data.projects;
 
-  
   return (
-    
     <div>
-        <GrillaProyectos proyectos={projects} />
+      <GrillaProyectos proyectos={projects} />
     </div>
-  )
-}
+  );
+};
 
-export default Proyectos
+export default Proyectos;

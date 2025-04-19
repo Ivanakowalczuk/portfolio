@@ -10,7 +10,7 @@ const Card = ({imagenDestacada, descripcion, repositorio, url, nombre, _id }: IP
   return (
 <div className="mx-5 h-auto min-w-[260px]  border rounded-xl shadow-md shadow-gray-600/50 overflow-hidden mt-20  transition-transform transform hover:scale-105 ">
   <div className="flex flex-col h-full">
-    <Link href={`/${_id}`}>
+    <Link href={`${process.env.NEXT_PUBLIC_API_URL}/${_id}`}>
     <div className="h-48 ">
       <Image className="h-full w-full object-cover " src={imagenDestacada} alt='foto proyecto' width={400} height={400}/>
     </div>
