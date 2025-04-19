@@ -18,7 +18,7 @@ const HeaderMobile = () => {
     setIsOpen(false);
   };
   return (
-    <div className='flex justify-between items-center w-full  gap-4 p-6 md:hidden ' >
+    <div className='flex justify-between items-center w-full  gap-4 p-6 md:hidden border-red-400' >
     <Drawer direction="left" open={isOpen} onClose={closeDrawer}  >
     <DrawerTitle>
     <Link href='/' className="justify-self-start  rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
@@ -34,7 +34,7 @@ const HeaderMobile = () => {
      </Link>
     </DrawerTitle>
     <DrawerTrigger  onClick={toggleDrawer}  aria-label='Button Menú' className='w-1/5 flex justify-end'>
-        <MenuIcon size={48} color='background' />
+        <MenuIcon size={48} color='black' />
      </DrawerTrigger>
     <DrawerContent aria-describedby='menú de navegación' className='flex flex-col flex-start h-full bg-gradient-to-tr  from-black  via-gray-900  to-red-950 rounded-none p-10 gap-6'>
     <Menu  closeDrawer={closeDrawer}/>      

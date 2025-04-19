@@ -1,28 +1,25 @@
 'use client'
 import React, { FC, useEffect } from 'react'
 import GrillaProyectos from '@/components/grillaProyectos/GrillaProyectos'
-import { useSelector } from 'react-redux';
-import { RootState, useAppDispatch } from '@/store';
-import { GET_PROJECTS } from '@/store/projects/thunk';
+import { IProyecto } from '@/interface';
 
-const Proyectos:FC= () => {
-    const url = "/api/projects"
+const Proyectos:FC = async () => {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/projects`, {
+    cache: "no-store", // Evitar cacheo para datos actualizados
+});
 
-  const { proyectos} = useSelector(
-    (state: RootState) => state.proyectos
-  );
-  
-  const dispatch = useAppDispatch();
- 
-  useEffect(()=>{
-   dispatch(GET_PROJECTS(url))
- 
-  }, [])
-  
+if (!res.ok) {
+    throw new Error("Error al obtener los proyectos");
+}
+
+const data = await res.json();
+const projects: IProyecto[] = data.projects;
+
   
   return (
+    
     <div>
-        <GrillaProyectos proyectos={proyectos}/>
+        <GrillaProyectos proyectos={projects} />
     </div>
   )
 }

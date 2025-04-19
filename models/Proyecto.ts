@@ -1,12 +1,8 @@
-import mongoose from "mongoose";
+import mongoose, { Schema } from "mongoose";
 
 const projectSchema = new mongoose.Schema(
     {
-        _id:{
-            type: Number,
-            required:[true, "Por favor complete este campo"]
-           },
-
+        _id: { type: Schema.Types.ObjectId, auto: true }, 
         nombre:{
         type: String,
         required:[true, "Por favor complete este campo"]
@@ -27,10 +23,15 @@ const projectSchema = new mongoose.Schema(
         required:[true, "Por favor complete este campo"]
        },
 
-       imagen:{
+       imagenDestacada:{
         type: String,
         required:[true, "Por favor complete este campo"]
        },
+
+       imagenes:{
+        type: [],
+        required:[true,"Por favor complete este campo" ]
+       }
 
     },
     {

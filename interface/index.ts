@@ -1,12 +1,14 @@
+import mongoose, { ObjectId } from 'mongoose';
 import { ReactNode } from 'react';
 
 export interface IProyecto {
-    _id?: number,
+    _id?: mongoose.Types.ObjectId;
     nombre: string,
     url: string,
-    descripción: string,
+    descripcion: string,
     repositorio: string,
-    imagen: string,
+    imagenDestacada: string,
+    imagenes: string[],
  
 }
 
