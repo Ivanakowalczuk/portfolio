@@ -9,7 +9,7 @@ interface ProjectPageProps {
 }
 
 async function getProject(id: Types.ObjectId) {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/projects/${id}`, {
+    const res = await fetch(`/api/projects/${id}`, {
         next: { revalidate: 10 }, // Revalidar cada 10 segundos
     });
 

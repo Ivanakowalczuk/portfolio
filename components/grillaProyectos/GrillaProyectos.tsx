@@ -13,7 +13,7 @@ import { IDataProyecto, IProyecto } from "@/interface";
      
       <div className="grid grid-cols-1 w-full sm:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 mx-auto gap-4 p-2">
          
-        { proyectos.map((proyecto: IProyecto)=>(
+        { proyectos?.map((proyecto: IProyecto)=>(
           <>
           <Card 
           key={proyecto.nombre} 

@@ -2,14 +2,13 @@
 
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import { Types } from 'mongoose';
 import Autoplay from 'embla-carousel-autoplay';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from '@/components/ui/carousel'; // ← ya no importa los controles
+} from '@/components/ui/carousel'; // 
 
 interface ProjectCardProps {
   id: Types.ObjectId;
