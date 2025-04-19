@@ -15,13 +15,13 @@ export const POST =async (req:NextRequest, res:NextResponse) => {
     }
 }
 
-export const GET =async () => {
-    await dbConnect()
-    try{
-      const result = await ProjectModel.find({}).sort({ id: 1 });
-      return NextResponse.json({data:result}, {status:200})
-    }catch(error){
-      console.log(error)
-      return NextResponse.json({data:null}, {status:500})
-    }
+export async function GET() {
+  try {
+      await dbConnect();
+      const projects = await ProjectModel.find({});
+      return NextResponse.json({ projects });
+  } catch (error) {
+      console.error("Error al obtener proyectos:", error);
+      return NextResponse.json({ error: "Error al obtener proyectos" }, { status: 500 });
+  }
 }

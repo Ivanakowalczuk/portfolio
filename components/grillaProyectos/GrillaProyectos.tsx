@@ -16,13 +16,15 @@ import { IDataProyecto, IProyecto } from "@/interface";
         { proyectos.map((proyecto: IProyecto)=>(
           <>
           <Card 
-          key={proyecto._id} 
-          imagen={proyecto.imagen} 
+          key={proyecto.nombre} 
+          imagenDestacada={proyecto.imagenDestacada} 
           nombre={proyecto.nombre} 
-          descripción={proyecto.descripción} 
+          descripcion={proyecto.descripcion} 
           url={proyecto.url} 
           repositorio={proyecto.repositorio} 
-     
+          _id={proyecto._id}
+          imagenes={proyecto.imagenes}
+              
            />
           </>
         ))}
