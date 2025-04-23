@@ -34,7 +34,7 @@ const HeaderMobile = () => {
      </Link>
     </DrawerTitle>
     <DrawerTrigger  onClick={toggleDrawer}  aria-label='Button Menú' className='w-1/5 flex justify-end'>
-        <MenuIcon size={48} color='black' />
+        <MenuIcon size={48} color='white' />
      </DrawerTrigger>
     <DrawerContent aria-describedby='menú de navegación' className='flex flex-col flex-start h-full bg-gradient-to-tr  from-black  via-gray-900  to-red-950 rounded-none p-10 gap-6'>
     <Menu  closeDrawer={closeDrawer}/>      
